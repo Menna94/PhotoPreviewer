@@ -124,5 +124,8 @@
       }
     }
   },
-  "defaultProject": "PhotoPreviewer"
+  "defaultProject": "PhotoPreviewer",
+  "cli": {
+    "analytics": false
+  }
 }
