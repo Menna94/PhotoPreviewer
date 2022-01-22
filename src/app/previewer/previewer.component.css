@@ -1,4 +1,14 @@
-img{
+button{
+    display: inline-block;
+    margin-left: 20px;
+}
+p:last-of-type{
+    display: inline-block;
+}
+figure{
     width: 50%;
-    height: 200px;
+}
+
+img{
+    height: 100%;
 }

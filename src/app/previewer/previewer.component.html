@@ -1,1 +1,15 @@
-<img [src]="imgUrl" />
+<!-- <section class="section">
+    <h1 class="title"> Feel Bored? Find A New Random Image </h1>
+    <button class="button is-success is-medium" (click)="onClick()">Fetch</button>
+    <img class="image is-128x128" *ngIf="imgUrl"  [src]="imgUrl" />
+</section> -->
+<div class="tile is-parent">
+    <article class="tile is-child notification">
+      <p class="title">Feel Bored?</p>
+      <p class="subtitle">Find A New Random Image</p>
+      <button class="button is-success is-small" (click)="onClick()">Fetch</button>
+      <figure class="image">
+        <img *ngIf="imgUrl"  [src]="imgUrl">
+      </figure>
+    </article>
+</div>

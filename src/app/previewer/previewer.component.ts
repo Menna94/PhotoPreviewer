@@ -14,17 +14,18 @@ export class PreviewerComponent implements OnInit {
   ) { }
 
   ngOnInit(): void {
+    this.fetchNewPhoto();
+  }
+
+  onClick(){
+    this.fetchNewPhoto();
+  }
+
+  private fetchNewPhoto(){
     this._pps.getPhotos()
     .subscribe(d=>{
       this.imgUrl = d.urls.regular
     })
   }
-
-  // onClick(){
-  //   this._pps.getPhotos()
-  //   .subscribe(d=>{
-  //     console.log(d);
-  //   })
-  // }
 
 }
